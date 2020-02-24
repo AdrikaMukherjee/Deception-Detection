@@ -10,28 +10,28 @@ Different Modality Integration methods was adopted for both Deep Learning and Ma
 
 ## Description of Folders and files
 
-Feature Extraction: Audio_FeatureExtraction.ipynb, Gaze_Microexpression_FeatureExtraction.ipynb
+### Feature Extraction: Audio_FeatureExtraction.ipynb, Gaze_Microexpression_FeatureExtraction.ipynb
 
 Audio_FeatureExtraction.ipynb file contains code used to extract Audio Features(mfcc, prosodic features using emobase.conf) using OpenSmile
 Gaze_Microexpression_FeatureExtraction.ipynb file contains code used to extract Static Gaze and Facial Action(Micro-Expression) Features using OpenFace
 
-Multimodal_DL: Multimodal_deception_detection_DL.ipynb
+### Multimodal_DL: Multimodal_deception_detection_DL.ipynb
 
 Multimodal_deception_detection_DL.ipynb file combines different modalities (Audio+Gaze; Audio+Micro-Expression; Gaze+Micro-Expression, Audio+Micro-Expression+Gaze) using Deep Learning Approach
 
-Multimodal_ML: Multimodal_deception_detection_ML.ipynb
+### Multimodal_ML: Multimodal_deception_detection_ML.ipynb
 
 Multimodal_deception_detection_ML.ipynb file combines different modalities (Audio+Gaze; Audio+Micro-Expression; Gaze+Micro-Expression, Audio+Micro-Expression+Gaze) using Latefusion. Both Manual hyper-parameter tuning and Voting Classifier is used for combining the modalities.
 
-Unimodal_DL: Meta_Learning_Model-Audio.ipynb, Meta_Learning_Model-Gaze.ipynb, Meta_Learning_Model-Mexp.ipynb, Unimodal_Audio.ipynb
+### Unimodal_DL: Meta_Learning_Model-Audio.ipynb, Meta_Learning_Model-Gaze.ipynb, Meta_Learning_Model-Mexp.ipynb, Unimodal_Audio.ipynb
 
 There was over 8000 datapoints for Audio, owing to the CSC Deceptive Speech dataset. Unimodal_Audio.ipynb handles the audio modality using Deep Learning. In order to compensate for the Lack of Data, Siamese network was used to make the model learn to differentiate between Deceptive and Truthful datapoints. Meta_Learning_Model-Audio, Meta_Learning_Model-Gaze.ipynb, Meta_Learning_Model-Mexp.ipynb, files contains code that handles Audio, Gaze and Mexp[2] Data individually
 
-Unimodal_ML: ML_models.ipynb
+### Unimodal_ML: ML_models.ipynb
 
 ML_models.ipynb file use Classical Machine Learning to tackle datapoints from individual modality
 
-Analysis: Analysis.ipynb,best_model_new.h5,best_model_old.h5
+### Analysis: Analysis.ipynb,best_model_new.h5,best_model_old.h5
 
 Analysis.ipynb file contains code that analyse the performance of initial and final model that contains only Audio Modality. best_model_new.h5 and best_model_old.h5 are used in the Analysis. best_model_new.h5, best_model_old.h5 are the models saved from Unimodal_Audio.ipynb file.
 The individual performance of model from each Dataset is Analyzed. 
