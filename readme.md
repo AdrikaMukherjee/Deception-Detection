@@ -35,7 +35,7 @@ ML_models.ipynb file use Classical Machine Learning to tackle datapoints from in
 
 Analysis.ipynb file contains code that analyse the performance of initial and final model that contains only Audio Modality. best_model_new.h5 and best_model_old.h5 are used in the Analysis. best_model_new.h5, best_model_old.h5 are the models saved from Unimodal_Audio.ipynb file.
 The individual performance of model from each Dataset is Analyzed. 
-Distribution of Cosine Similarity in Deceptive and Truthful Data is plotted.
+Distribution of Cosine Similarity between Deceptive and Truthful Data is studied.
 
 
 ** [1] Datasets used are: 
