@@ -6,8 +6,6 @@ Different Modalities was explored to tackle the problem. Audio, Gaze and Micro-E
 Initially the Deep Learning Approach was tried using the Audio Features, since maximum number of data points was available for this Modality. Finally Meta_Learning Approach was used to handle individual modalities due to scarcity of data. 
 Different Modality Integration methods was adopted for both Deep Learning and Machine Learning Approaches
 
-
-
 ## Description of Folders and files
 
 ### Feature Extraction: Audio_FeatureExtraction.ipynb, Gaze_Microexpression_FeatureExtraction.ipynb
@@ -19,17 +17,15 @@ Gaze_Microexpression_FeatureExtraction.ipynb file contains code used to extract 
 
 Multimodal_deception_detection_DL.ipynb file combines different modalities (Audio+Gaze; Audio+Micro-Expression; Gaze+Micro-Expression, Audio+Micro-Expression+Gaze) using Deep Learning Approach
 
-### Multimodal_ML: Multimodal_deception_detection_ML.ipynb
+### Unimodal+Multimodal_ML: Multimodal_deception_detection_ML.ipynb
 
-Multimodal_deception_detection_ML.ipynb file combines different modalities (Audio+Gaze; Audio+Micro-Expression; Gaze+Micro-Expression, Audio+Micro-Expression+Gaze) using Latefusion. Both Manual hyper-parameter tuning and Voting Classifier is used for combining the modalities.
+Multimodal_deception_detection_ML.ipynb file combines different modalities (Audio+Gaze; Audio+Micro-Expression; Gaze+Micro-Expression, Audio+Micro-Expression+Gaze) using Latefusion. 
+ML_models.ipynb file use Classical Machine Learning to tackle datapoints from individual modality
+Both Manual hyper-parameter tuning and Voting Classifier is used for combining the modalities.
 
 ### Unimodal_DL: Meta_Learning_Model-Audio.ipynb, Meta_Learning_Model-Gaze.ipynb, Meta_Learning_Model-Mexp.ipynb, Unimodal_Audio.ipynb
 
 There was over 8000 datapoints for Audio, owing to the CSC Deceptive Speech dataset. Unimodal_Audio.ipynb handles the audio modality using Deep Learning. In order to compensate for the Lack of Data, Siamese network was used to make the model learn to differentiate between Deceptive and Truthful datapoints. Meta_Learning_Model-Audio, Meta_Learning_Model-Gaze.ipynb, Meta_Learning_Model-Mexp.ipynb, files contains code that handles Audio, Gaze and Mexp[2] Data individually
-
-### Unimodal_ML: ML_models.ipynb
-
-ML_models.ipynb file use Classical Machine Learning to tackle datapoints from individual modality
 
 ### Analysis: Analysis.ipynb
 
