@@ -1,7 +1,7 @@
 # Multimodal Deception Detection
 
 Deception Detetion is a neglected problem. The reasons are mainly unavailibility of proper data. In this project, new data was curated and also existing datasets[1] dealing with
-this problem was combined to prepare a master dataset. Deep Learning Approach was used to tackle the problem. Finally Machine Learning Techniques was employed to compare results from both Approach.
+this problem was combined to prepare a master dataset. Deep Learning Approach was used to tackle the problem. Finally, Machine Learning Techniques were employed to compare results from both Approach.
 Different Modalities was explored to tackle the problem. Audio, Gaze and Micro-Expression Features was extracted using OpenSource Toolkits: OpenFace(https://cmusatyalab.github.io/openface) and OpenSmile(https://www.audeering.com/opensmile/). These modalities were combined for detecting deception. 
 Initially the Deep Learning Approach was tried using the Audio Features, since maximum number of data points was available for this Modality. Finally Meta_Learning Approach was used to handle individual modalities due to scarcity of data. 
 Different Modality Integration methods was adopted for both Deep Learning and Machine Learning Approaches
